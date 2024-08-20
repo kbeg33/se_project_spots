@@ -41,6 +41,8 @@ The only changes I would suggest when assigning this project would be, to allow 
 
 Screenshots of responsive webpage layout and buttons 
 
+- [*Spots full page*](./images/project%203%20full%20page.JPG)
+
 - [*Spots on small device*](./images/project%203%20at%20different%20size.JPG)
 
 - [*Spots profile with button*](./images/project%203%20profile%20example.JPG)
