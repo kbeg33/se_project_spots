@@ -22,7 +22,7 @@
     }
     
     .cards__list {
-        grid-template-columns: repeat(auto-fit, minmax(288px, 320px));
+        grid-template-columns: 1fr;
         gap: 20px;
     }
 
