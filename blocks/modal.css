@@ -34,9 +34,14 @@
     top: 32px;
     right: 50px;
     background-image: url(../images/Close\ Icon.svg);
-    background-color: #fff;
+    background-color: transparent;
     background-position: center;
     border: none;
+}
+
+.modal__close-btn:hover {
+    cursor: pointer;
+    background-image: url(../images/close\ icon\ dark.svg);
 }
 
 .modal__title {
@@ -68,6 +73,11 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 1;
+}
+
+.modal__input:hover {
+    border-color: rgba(33, 33, 33, 1);
+    cursor: pointer;
 }
 
 .modal__submit-btn {
