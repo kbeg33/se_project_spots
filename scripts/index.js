@@ -7,7 +7,6 @@ const initialCards = [
     { name: "Mountain house", link: "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/spots/6-photo-by-moritz-feldmann-from-pexels.jpg" }
 ];
 
-
 // Profile elements
 const profileEditButton = document.querySelector(".profile__edit-btn");
 const cardModalBtn = document.querySelector(".profile__add-btn");
@@ -67,12 +66,11 @@ function handleAddCardSubmit(evt) {
 
     cardsList.prepend(cardElement);
     closeModal(cardModal);
-    cardForm.reset(inputValues);
+    cardForm.reset();
 }
 
 // complete image rendering 
 function getCardElement(data) {   
-    const cardTemplate = document.querySelector("#card-template");
     const cardElement = cardTemplate.content.querySelector(".card").cloneNode(true);   
     const cardNameEl = cardElement.querySelector(".card__title");
     const cardImageEl = cardElement.querySelector(".card__image");
@@ -133,3 +131,6 @@ initialCards.forEach((item) => {
     const cardElement = getCardElement(item);
     cardsList.append(cardElement); 
 });
+
+
+
