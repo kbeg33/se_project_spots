@@ -35,7 +35,7 @@ const previewModalImgEl = previewModal.querySelector(".modal__image");
 const previewModalCapEl = previewModal.querySelector(".modal__caption");
 const previewModalCloseBtn = previewModal.querySelector("#close-preview-modal");
 
-// Open & close functions - ERROR
+// Open & close functions 
 function openModal(modal) {
     modal.classList.add("modal_opened");
 }
