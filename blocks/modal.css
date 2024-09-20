@@ -145,12 +145,11 @@
 
 @media screen and (max-width: 660px) {
     .modal {
-        padding: 0 10px;
         max-width: 100%;
     }
 
     .modal__container {
-        padding: 0 10px;
+        padding: 0 10px 12px;
     }
 
     .modal__image {
@@ -182,6 +181,7 @@
 
     .modal__input {
         font-size: 16px;
+        max-width: 100%;
     }
 
     .modal__submit-btn {
