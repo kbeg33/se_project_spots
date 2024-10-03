@@ -112,7 +112,7 @@
 }
 
 .modal__input {
-    padding: 16px 12px;
+    padding: 16px 12px 16px;
     border-radius: 8px;
     border-color: rgba(33, 33, 33, .4);
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -121,9 +121,21 @@
     line-height: 1;
 }
 
+.modal__input_type_error {
+    border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
 .modal__input:hover {
     border-color: rgba(33, 33, 33, 1);
     cursor: pointer;
+}
+
+.modal__error {
+    display: block;
+    color: rgba(255, 0, 0, .7);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17.6px;
 }
 
 .modal__submit-btn {
@@ -137,6 +149,11 @@
     font-weight: 500;
     line-height: 1;
     cursor: pointer;
+}
+
+.button_inactive {
+    background: transparent url("../images/disabled\ save.svg") center no-repeat;
+    width: 156px;
 }
 
 .modal__submit-btn:hover {
