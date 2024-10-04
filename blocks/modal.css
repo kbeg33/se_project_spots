@@ -152,8 +152,7 @@
 }
 
 .button_inactive {
-    background: transparent url("../images/disabled\ save.svg") center no-repeat;
-    width: 156px;
+    background-color: #909090;
 }
 
 .modal__submit-btn:hover {

@@ -45,7 +45,6 @@ const checkInputValidity = (formElement, inputElement, config) => {
   const disableButton = (buttonElement, config) => {
     buttonElement.classList.add('button_inactive');
     buttonElement.disabled = true;
-    // add modifier to make button grey thru css & js
   };
 
   // OPTIONAL
