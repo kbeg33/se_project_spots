@@ -10,13 +10,13 @@ const settings = {
 const showInputError = (formElement, inputElement, errorMessage, config) => {
     const errorMessageEl = formElement.querySelector(`#${inputElement.id}-error`);
     errorMessageEl.textContent = errorMessage;
-    inputElement.classList.add("modal__input_type_error");
+    inputElement.classList.add(config.inputErrorClass);
   };
 
   const hideInputError = (formElement, inputElement, config) => {
     const errorMessageEl = formElement.querySelector(`#${inputElement.id}-error`);
     errorMessageEl.textContent = "";
-    inputElement.classList.remove("modal__input_type_error");
+    inputElement.classList.remove(config.inputErrorClass);
   };
 
   const hasInvalidInput = (inputList, config) => {
@@ -50,7 +50,7 @@ const checkInputValidity = (formElement, inputElement, config) => {
   // OPTIONAL
   const resetValidation = (formElement, inputList, config) => {
     inputList.forEach((input) => {
-        hideInputError(formElement, input);
+        hideInputError(formElement, input, config);
     });
   };
 
@@ -63,13 +63,13 @@ const setEventListenrs = (formElement, config) => {
     inputList.forEach((inputElement) => {
         inputElement.addEventListener("input", function () {
             checkInputValidity(formElement, inputElement, config);
-            toggleButtonState(inputList,buttonElement, config);
+            toggleButtonState(inputList, buttonElement, config);
         });
     });
 };
 
 const enableValidation = (config) => {
-    const formList =document.querySelectorAll(config.formSelector);
+    const formList = document.querySelectorAll(config.formSelector);
     formList.forEach((formElement) => {
         setEventListenrs(formElement, config);
     });
