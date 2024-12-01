@@ -149,14 +149,39 @@
     font-weight: 500;
     line-height: 1;
     cursor: pointer;
-}
-
-.button_inactive {
-    background-color: #909090;
+    border: none;
 }
 
 .modal__submit-btn:hover {
     background-color: rgba(33, 33, 33, .8);
+}
+
+.modal__submit-btn_confirm {
+    background-color: #ff6565;
+    border-radius: 8px;
+    padding: 18px 32px;
+    color: #212121;
+  }
+
+.modal__submit-btn_confirm:hover {
+    background-color: #ff3333;
+  }
+
+.modal__submit-btn_cancel {
+    background-color: #fff;
+    padding: 18px 32px;
+    color: #212121;
+    border: 1px solid;
+  }
+
+.modal__submit-btn_cancel:hover {
+    background-color: #212121;
+    color: #fff;
+  }
+
+.button_inactive {
+    background-color: #909090;
+    opacity: 50%;
 }
 
 @media screen and (max-width: 660px) {
