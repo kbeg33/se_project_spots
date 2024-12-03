@@ -66,6 +66,7 @@
 .card__like-btn_liked {
     background-image: url("../images/liked-heart.svg");
     opacity: 1;
+    background-repeat: no-repeat;
 }
 
 .card__like-btn_liked:hover {
